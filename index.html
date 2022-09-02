@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ================================ FONTS ================================ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- ======================================================================= -->
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Cheatsheet</title>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="selector">*</td>
+                <td class="name">Universal selector</td>
+                <td>Matches any element</td>
+            </tr>
+            <tr>
+                <td class="selector">E</td>
+                <td class="name">Type selectors</td>
+                <td>Matches any E element (i.e., an element of type E)</td>
+            </tr>
+            <tr>
+                <td class="selector">E F</td>
+                <td class="name">Descendant selectors</td>
+                <td>Matches any F element that is a descendant of an E element</td>
+            </tr>
+            <tr>
+                <td class="selector">E > F</td>
+                <td class="name">Child selectors</td>
+                <td>Matches any F element that is a child of an element E</td>
+            </tr>
+            <tr>
+                <td class="selector">E:first-child</td>
+                <td class="name">The :first-child pseudo-class</td>
+                <td>Matches element E when E is the first child of its parent</td>
+            </tr>
+            <tr>
+                <td class="selector">E:active</td>
+                <td rowspan="3" class="name">The dynamic pseudo-classes</td>
+                <td rowspan="3">Matches E during certain user actions</td>
+            </tr>
+            <tr><td class="selector">E:hover</td></tr>
+            <tr><td class="selector">E:focus</td>
+                </td>
+            </tr>
+            <tr>
+                <td class="selector">E:link <br>
+                    E:visited</td>
+                <td class="name">The link pseudo-classes</td>
+                <td>Matches element E if E is the source anchor of a hyperlink of which the target is not yet visited (:link) or already visited (:visited)</td>
+            </tr>
+            <tr>
+                <td class="selector">E + F</td>
+                <td class="name">Adjacent selectors</td>
+                <td>Matches any F element immediately preceded by a sibling element E</td>
+            </tr>
+            <tr>
+                <td class="selector">E[foo]</td>
+                <td class="name">Attribute selectors</td>
+                <td>Matches any E element with the "foo" attribute set (whatever the value)</td>
+            </tr>
+            <tr>
+                <td class="selector">E[foo="warning"]</td>
+                <td class="name">Attribute selectors</td>
+                <td>Matches any E element whose "foo" attribute value is exactly equal to "warning"</td>
+            </tr>
+            <tr>
+                <td class="selector">E[foo~="warning"]</td>
+                <td class="name">Attribute selectors</td>
+                <td>Matches any E element whose "foo" attribute value is a list of space-separated values, one of which is exactly equal to "warning"</td>
+            </tr>
+            <tr>
+                <td class="selector">E[lang|="en"]</td>
+                <td class="name">Attribute selectors</td>
+                <td>Matches any E element whose "lang" attribute has a hyphen-separated list of values beginning (from the left) with "en"</td>
+            </tr>
+            <tr>
+                <td class="selector">#myClass</td>
+                <td class="name">ID selectors</td>
+                <td>Matches any element whose class~=myClass</td>
+            </tr>
+            <tr>
+                <td class="selector">.myId</td>
+                <td class="name">Class selectors</td>
+                <td>Matches any element with the ID equal to "myId"</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
